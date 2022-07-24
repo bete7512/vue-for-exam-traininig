@@ -1,0 +1,15 @@
+{
+  "name": "back-end-for-exam-training",
+  "version": "1.0.0",
+  "description": "am alone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "full-stack-testing"
+  },
+  "author": "bete",
+  "license": "ISC"
+}
