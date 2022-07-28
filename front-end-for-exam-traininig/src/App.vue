@@ -1,34 +1,11 @@
 <template>
-<div class="text-end">
-
-</div>
-  <nav class="text">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
-  <div class="text-red-800">let somebody go</div>
+  <v-app color="red" class=" lighten-4">
+      <router-view></router-view>
+      <!-- <FooterVue></FooterVue> -->
+  </v-app>
 </template>
-
+<script lang="ts" setup>
+import FooterVue from './components/Footer.vue';
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

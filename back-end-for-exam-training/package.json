@@ -2,14 +2,32 @@
   "name": "back-end-for-exam-training",
   "version": "1.0.0",
   "description": "am alone",
-  "main": "server.js",
+  "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.ts"
   },
   "repository": {
     "type": "git",
     "url": "full-stack-testing"
   },
   "author": "bete",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.9",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.6.2",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "keywords": []
 }
