@@ -37,7 +37,7 @@
       Great blogging makes your business look more credible, which is especially important if your brand is still young
       and fairly unknown. It ensures presence online and niche authority at the same time.
     </div>
-    <HomeviewVue></HomeviewVue>
+    <HomeviewVue />
   </v-container>
   <FooterVue width="fullscreen"></FooterVue>
 </template>

@@ -8,10 +8,14 @@
     "dev": "vite"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
     "@vee-validate/rules": "^4.6.2",
+    "@vue/apollo-composable": "^4.0.0-alpha.19",
     "@vuelidate/core": "^2.0.0-alpha.43",
     "@vuelidate/validators": "^2.0.0-alpha.31",
-    "pinia": "^2.0.16",
+    "graphql": "^16.5.0",
+    "graphql-tag": "^2.12.6",
+    "pinia": "^2.0.17",
     "roboto-fontface": "*",
     "typescript": "^4.7.4",
     "vee-validate": "^4.6.2",

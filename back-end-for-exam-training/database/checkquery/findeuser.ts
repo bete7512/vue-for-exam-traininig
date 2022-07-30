@@ -28,21 +28,20 @@ const trying = async (username: any) => {
         {
             method: 'POST',
             headers: {
-            //     'x-hasura-admin-secret': 'myadminsecretkey'
+                'x-hasura-admin-secret': 'myadminsecretkey'
             },
             body: JSON.stringify({
                 query: `query MyQuery($username: String!) {
                     Employers(where: {username: {_eq: $username}}) {
                       email
+                      username
                     }
-                  }`,username
+                  }`,variables:username
             })
         }
         )
-        console.log(await user.json())
+        const res = await user.json()
+        return res.data.Employers[0]
 
-    return "jhfacugoia"
 }
-
-
 export default trying

@@ -1,12 +1,10 @@
-import user from "../database/checkquery/findeuser"
+import trying from "../database/checkquery/findeuser"
 const login = async (req:any,res:any)=>{
-    console.log("bhcozxhnpiojpos");
-    
+     
     const {username,password} = req.body.input
 
-    
-    // const checkuser =user(req.body)
-    // console.log(checkuser)
+    const data =  await trying({username});
+   console.log(data)
     res.status(200).json({
         token:'hero of the century'
     })

@@ -1,12 +1,12 @@
 import trying from "../database/checkquery/findeuser"
 const signup = async (req: any, res: any) => {
-    console.log("bhcozxhnpiojpos");
-    const { username, password } = req.body.input
-    console.log(req.body);
+    const { username, password } = req.body.input.objects
+    console.log(req.body.input.objects);
     console.log(username);
-    await console.log(trying(username))
-    return res.status(200).json({
-        token: 'hero of the century'
+   const data =  await trying({username});
+//    console.log(data)
+   return res.status(200).json({
+        success: 'hero of the century'
     })
 }
 export default signup
